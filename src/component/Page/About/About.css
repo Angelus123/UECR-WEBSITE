@@ -1,0 +1,56 @@
+.item-about {    
+  width: 70%;
+  background-image: url('../../../assets/Bible1.png');
+  text-align: left;
+  box-shadow: 5px 7px 5px rgba(17, 5, 80, 0.102);
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.712);
+  border:2px solid rgb(252, 251, 250);
+  margin: 2px;
+  display: inline-block;
+  cursor: pointer;
+   
+  }
+
+
+  .item-about {    
+    width: 70%;
+    text-align: left;
+    box-shadow: 5px 7px 5px rgba(17, 5, 80, 0.102);
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.712);
+    border:2px solid rgb(252, 251, 250);
+    margin: 2px;
+    display: inline-block;
+    cursor: pointer;
+     
+    }
+    .text-panel {    
+      width: 100%;
+      background-image: url('../../../assets/Bible1.png');
+      background-repeat: no-repeat;
+      background-size: 60%;
+      background-color: rgba(255, 255, 255, 0.712);
+      border:2px solid rgb(252, 251, 250);
+       
+      }
+  .input-box{
+
+    margin: -2px 02px;
+    border:none;
+    border-bottom: 2px solid rgb(13, 13, 65) ;
+    font-family: serif;
+    margin-top: 2px;
+    background-color: rgb(255, 255, 255);
+    display:block;
+    font-size: 16px;
+    padding: 10px;
+  }
+  /* .reg-title{
+    backgroundImage:`url(${logo})`,
+    backgroundRepeat:'cover';
+     padding:'50px';
+     width:'auto';
+  } */

@@ -1,0 +1,184 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+===================Appjs 1&2//==============================================================
+
+import React, {Component } from 'react';
+
+import firebase from 'firebase/app';
+import 'firebase/database'; // If using Firebase database
+import 'firebase/storage';  // If using Firebase storage
+class App extends Component{
+  constructor(){
+    super();
+    this.state = {
+  speed:0
+    };
+  }
+  componentDidMount(){
+
+    const rootRef = firebase.database().ref().child('react');
+    const speedRef = rootRef.child('speed');
+    speedRef.on('value',span => {
+      this.setState({
+        speed: span.val()
+      })
+   })
+    // this.setState({
+    //  speed: 25 
+    // })
+  }
+  render(){
+    return(
+
+      <div>
+      <h1>{this.state.speed}</h1></div>
+    )
+  }
+}
+export default App;
+
+===================index js 1&2//==============================================================
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+
+// The proper way to import firebase is as such:
+
+import firebase from 'firebase/app';
+import 'firebase/database'; // If using Firebase database
+import 'firebase/storage';  // If using Firebase storage
+// import registerServiceWorker from './registerServiceWorker';
+
+const config = {
+    apiKey: "AIzaSyBHpl-SH4Om-sRzM5s1w5gGU06rOKUx1II",
+    authDomain: "react-notes-b701b.firebaseapp.com",
+    databaseURL: "https://react-notes-b701b.firebaseio.com",
+    projectId: "react-notes-b701b",
+    storageBucket: "react-notes-b701b.appspot.com",
+    messagingSenderId: "914926163606",
+    appId: "1:914926163606:web:d0ae0937faa3bdd17354b7",
+    measurementId: "G-E9QXELZJX0"
+}
+firebase.initializeApp(config)
+
+ReactDOM.render(<App />, document.getElementById('root'));
+// registerServiceWorker();
+===================index html  1&2//==============================================================
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Firecats</title>
+  </head> 
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+  <div id="root"></div>
+
+
+    
+  </body>
+  
+  </body>
+</html>
+
+<><><><><><><><><><><><><><><><><syncronisation><><><><><><><><><><><><><><><><><><><><><>
+
+
+===================index html  1&2//==============================================================
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Firecats</title>
+    <script src="https//gstatic/firebasejs/live/3.1/firebase.js"></script>
+  </head> 
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+<!-- value -->
+<pre id="object">  
+</pre>
+
+
+<!-- child -->
+  </body>
+  
+  </body>
+</html>
+
+
+===================index js  1&2//==============================================================
+import firebase from 'firebase/app';
+import 'firebase/database'; // If using Firebase database
+import 'firebase/storage';  // If using Firebase storage
+(function () {
+ //initialise firebase 
+
+  const config = {
+    apiKey: "AIzaSyBHpl-SH4Om-sRzM5s1w5gGU06rOKUx1II",
+    authDomain: "react-notes-b701b.firebaseapp.com",
+    databaseURL: "https://react-notes-b701b.firebaseio.com",
+    projectId: "react-notes-b701b",
+    storageBucket: "react-notes-b701b.appspot.com",
+    messagingSenderId: "914926163606",
+    appId: "1:914926163606:web:d0ae0937faa3bdd17354b7",
+    measurementId: "G-E9QXELZJX0"
+  }
+  firebase.initializeApp(config);
+  //get Element
+  const preObject = document.getElementById('object')
+  //create references
+ 
+  const dbRefObject= firebase.database().ref().child('object');
+
+  dbRefObject.on('value', snap => 
+  preObject.innerText= JSON.stringify(snap.val(),null,5))
+}());

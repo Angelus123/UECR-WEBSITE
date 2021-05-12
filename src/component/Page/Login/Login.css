@@ -1,0 +1,25 @@
+.Login-form {
+    width: 30%;
+    box-shadow: 5px 7px 5px rgba(17, 5, 80, 0.644);
+    font-family: serif;
+    border-radius: 2%;
+    background-color: rgba(0, 0, 0, 0.678);
+    display: inline-block;
+   
+  }
+  .login-box{
+    width: 80%;
+    margin: -1px 02px;
+    border: none;
+    border-bottom: 4px solid rgb(9, 42, 190) ;
+    font-family: serif;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 10px; 
+  }
+  /* .reg-title{
+    backgroundImage:`url(${logo})`,
+    backgroundRepeat:'cover';
+     padding:'50px';
+     width:'auto';
+  } */
