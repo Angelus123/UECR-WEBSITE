@@ -15,7 +15,7 @@ const History = (props) => {
     <h3>UECR</h3>
     <hr color="lightgray" />
         <hr color="#053d039b"/>
-        <div className="history-berger ">
+        <div className=" ">
                 <h3>UECR Berger from 2000 to 2021</h3> 
 
               

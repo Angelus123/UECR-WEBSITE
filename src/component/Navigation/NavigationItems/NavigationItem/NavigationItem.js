@@ -7,7 +7,7 @@ class NavigationItem extends Component{
     {
         return (
         <Aux>
-            <div className="NavigationItem" >
+            <div className="NavigationItem" onClick={this.props.close}>
                 <NavLink to ={this.props.link} exact >{this.props.children}</NavLink>
             </div>
         </Aux>     

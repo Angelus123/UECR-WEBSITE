@@ -30,6 +30,7 @@
         text-align: center;
         display: inline-block;
         border: 1px solid #eee;
+        background-color: rgba(53, 31, 2, 0.582);
         box-shadow: 0 2px 3px #ccc;
         margin: 10px;
         box-sizing: border-box;
@@ -65,4 +66,12 @@
           box-shadow: 0 2px 3px #ccc;
           box-sizing: border-box;
           cursor: pointer;
+          }
+          @media(max-width:500px){
+            .text-pillars{
+            width: 96%;
+            }
+            .text-panel-staff{
+              width: 97%;
+            }
           }
