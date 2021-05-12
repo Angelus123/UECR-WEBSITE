@@ -33,12 +33,12 @@ const Footer= () => {
 </div> 
     
 <div class="footer">
-  <form action="" method="get">
+
   <input type="text" name="fullname"  placeholder="Your fullname"  className="footer-box" />
   <input type="email" name="email"  placeholder="E-mail"  className="footer-box"/>
   <br/>
   <button type="submit" class="submit">Subscribe</button>
-  </form>
+
   <br/>
 
 <div class="footer">

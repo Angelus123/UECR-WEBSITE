@@ -20,7 +20,7 @@ const sideDrawer = ( props ) => {
                    
                     
                 <nav>
-                    <NavigationItems />
+                    <NavigationItems close= {props.closed}/>
                 </nav>
                 <button onClick={props.closed}>EXIT</button>
             </div>

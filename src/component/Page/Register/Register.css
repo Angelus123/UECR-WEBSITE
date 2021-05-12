@@ -20,12 +20,9 @@
 }
 @media(max-width:500px){
   .register-box{
-  width: 80%;
+  width: 96%;
+  }
+  .register-box{
+    width: 97%;
   }
 }
-/* .reg-title{
-  backgroundImage:`url(${logo})`,
-  backgroundRepeat:'cover';
-   padding:'50px';
-   width:'auto';
-} */

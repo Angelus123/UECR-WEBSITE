@@ -19,8 +19,11 @@
     padding: 10px; 
   }
   @media(max-width:500px){
-    .register-box{
-    width: 80%;
+    .footer-box{
+    width: 100%;
+    }
+    .footer-form {
+      width: 100%;
     }
   }
   /* .reg-title{
