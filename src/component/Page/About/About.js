@@ -1,11 +1,9 @@
 import React from'react'
-import uecr from '../../../assets/bible1.png'
 import './About.css'
 const AboutUECRPost = (props) => {
 
   console.log('--post',props)
-  const MAX_LENGTH = 40;
-  const { title } = props;
+  
 
   return(
 
