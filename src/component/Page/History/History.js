@@ -12,82 +12,59 @@ const History = (props) => {
 
 
 <div className="item-Histories">    
-    <h3>UECR</h3>
     <hr color="lightgray" />
         <hr color="#053d039b"/>
-        <div className=" ">
+            <div className="history-panel ">
                 <h3>UECR Berger from 2000 to 2021</h3> 
-
-              
                 <div  className="text-history-berger ">
-                <img src={berger} alt="Berger" className="img"/>
-                   <h4>Berger IZERE Ange Felix</h4>
-                   <hr width= '20%'/>2021, 2020 <hr width= '20%'/>
- <hr width= '20%'/> <hr width= '20%'/>
+                    <img src={berger} alt="Berger" className="img"/>
+                    <h4>Berger IZERE Ange Felix</h4>
+                    <hr width= '20%'/>2021, 2020 <hr width= '20%'/>
+                    <hr width= '20%'/> <hr width= '20%'/>
+                </div>
+                
+                <div  className="text-history-berger ">
+                    <img src={berger} alt="Berger" className="img"/>
+                    <h4>Berger IZERE Ange Felix</h4>
+                    <hr width= '20%'/>2021, 2020 <hr width= '20%'/>
+                    <hr width= '20%'/> <hr width= '20%'/>
+                 </div>
+                
+                 <div  className="text-history-berger ">
+                    <img src={berger} alt="Berger" className="img"/>
+                    <h4>Berger IZERE Ange Felix</h4>
+                    <hr width= '20%'/>2021, 2020 <hr width= '20%'/>
+                    <hr width= '20%'/> <hr width= '20%'/>
+                </div>
+                
+                <div  className="text-history-berger ">
+                    <img src={berger} alt="Berger" className="img"/>
+                    <h4>Berger IZERE Ange Felix</h4>
+                    <hr width= '20%'/>2021, 2020 <hr width= '20%'/>
+                    <hr width= '20%'/> <hr width= '20%'/>
+                </div>
+                
+                <div  className="text-history-berger ">
+                    <img src={berger} alt="Berger" className="img"/>
+                    <h4>Berger IZERE Ange Felix</h4>
+                    <hr width= '20%'/>2021, 2020 <hr width= '20%'/>
+                    <hr width= '20%'/> <hr width= '20%'/>
+                 </div>
 
                 <div  className="text-history-berger ">
-                <img src={berger} alt="Berger" className="img"/>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <a href="http://">More</a>
+                    <img src={berger} alt="Berger" className="img"/>
+                    <h4>Berger IZERE Ange Felix</h4>
+                    <hr width= '20%'/>2021, 2020 <hr width= '20%'/>
+                    <hr width= '20%'/> <hr width= '20%'/>
                 </div>
-                <div  className="text-history-berger">
-                <img src={berger} alt="Berger" className="img"/>
 
-                <h4>Berger Protogene</h4>
-                <hr width= '20%'/> 2019<hr width= '20%'/>
-                   <hr width= '20%'/> <hr width= '20%'/>
-                    <a href="http://">More</a>
-                </div>   
-
-                 <div  className="text-history-berger">
-                <img src={berger} alt="Berger" className="img"/>
-                <h4>Berger </h4>
-                <hr width= '20%'/>2017 <hr width= '20%'/>
-                   <hr width= '20%'/> <hr width= '20%'/>
-                   <hr width= '20%'/> <hr width= '20%'/>
-                
-                    <a href="http://">More</a>
-                </div>    
-                  
-                <div  className="text-history-berger">
-
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                
-                    <a href="http://">More</a>
+                <div  className="text-history-berger ">
+                    <img src={berger} alt="Berger" className="img"/>
+                    <h4>Berger IZERE Ange Felix</h4>
+                    <hr width= '20%'/>2021, 2020 <hr width= '20%'/>
+                    <hr width= '20%'/> <hr width= '20%'/>
                 </div>
                 <div  className="text-history-berger">
-                <img src={berger} alt="Berger" className="img"/>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 
-                    <a href="http://">More</a>
-                </div>
-                <div  className="text-history-berger">
-                <img src={berger} alt="Berger" className="img"/>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             
-                    <a href="http://">More</a>
-                </div>
-                <div  className="text-history-berger">
-                <img src={berger} alt="Berger" className="img"/>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             
-                    <a href="http://">More</a>
-                </div>
-                <div  className="text-history-berger">
-                <img src={berger} alt="Berger" className="img"/>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             
-                    <a href="http://">More</a>
-                </div>
-                <div  className="text-history-berger">
-                <img src={berger} alt="Berger" className="img"/>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             
-                    <a href="http://">More</a>
-                </div>
-                <div  className="text-history-berger">
-               
-
                     View all Berger 
                     <img src={next} alt="Berger" className="img"/>
                 </div>
@@ -248,7 +225,7 @@ const History = (props) => {
       </div>
   
     </div>
-    </div>
+
     
 
 

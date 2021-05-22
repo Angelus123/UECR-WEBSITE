@@ -3,15 +3,9 @@ import '../../style/ustyle.css'
 import Header from '../../component/Header/Header'
 import Slide from '../../component/SlideImg/SlideImg'
 import Side from '../../component/Side/Side'
-import AboutUECRPosts from '../Home/Posts/AboutUECRPosts/AboutUECRPosts'
-import AboutRCCIPosts from '../Home/Posts/AboutRCCIPosts/AboutRCCIPosts'
-import AboutRCCPosts from './Posts/AboutRCCPosts/AboutRCCPosts'
-import WelcUECR from '../../component/Post/WelcUECR/WelcUECR'
-import WelcUECREi from '../../component/Post/WelcUECR_8/WelcUECR_8'
-import WelcUECRNi from '../../component/Post/WelcUECR_9/WelcUECR_9'
-import WeekSaintPosts from '../Home/Posts/WeekSaintPosts/WeekSaintPosts'
-import WeekVersel from '../../component/Post/WeekVersel/WeekVersel'
-import SevenGift from '../../component/Post/SevenGift/SevenGift'
+import WeekNewsPosts from './Posts/WeekNewsPosts/WeekNewsPosts'
+import WeekVersePosts from './Posts/WeekVersePosts/WeekVersePosts'
+import SevenGiftPosts from './Posts/SevenGiftPosts/SevenGiftPosts'
 import UECRZone from '../../component/Post/UECRZone/UECRZone'
 import Login from '../../component/UI/Login/Login'
 import Register from '../../component/UI/Register/Register'
@@ -35,8 +29,6 @@ class Home extends Component{
     render(){
 
         return( 
-
-          
                     <div className="container">
                        
                         <Header />
@@ -47,7 +39,7 @@ class Home extends Component{
                         <Login 
                             show ={this.state.loginClicked} 
                             loginClosed ={this.loginClickedHandle}>
-                            <LoginForm/>
+                            <LoginForm loginClosed ={this.loginClickedHandle}></LoginForm>
                         </Login> 
 
 
@@ -58,20 +50,10 @@ class Home extends Component{
                             login={this.loginClickedHandle}
                             registerClosed ={this.registerClickedHandle}
                             />
-                        </Register>                        
-                        <AboutUECRPosts />
-                        <AboutRCCPosts /> 
-                        <AboutRCCIPosts /> 
-                        <WeekSaintPosts />                  
-                        <WelcUECR />
-                        <WelcUECREi /> 
-                        <WelcUECRNi />
-                     
-                        <WeekVersel />
-                        <SevenGift/>
+                        </Register>     
+                        <WeekNewsPosts />                                    
+                        <SevenGiftPosts/>
                         <UECRZone/>
-                     
-         
                     </div>
                  
               

@@ -7,6 +7,15 @@
     height:100%;
 
 }
+.nav-icon{
+    margin-right: 10px;
+    width:30px;
+    height:30px;
+}
+
+.Login { background-color: red;
+
+}
 @media (min-width:500px){
     .NavigationItems {
         flex-flow: row;

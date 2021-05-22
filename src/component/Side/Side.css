@@ -59,3 +59,15 @@
         transform: scale(1);
     }
 }
+/* Within Container */
+.zoom-within-container {
+  height: 30px; /* [1.1] Set it as per your need */
+  overflow: hidden; 
+  background-color: red;/* [1.2] Hide the overflowing of child elements */
+}
+.zoom-within-container img {
+  transition: transform .5s ease;
+}
+.zoom-within-container:hover img {
+  transform: scale(1.5);
+}

@@ -25,7 +25,6 @@ class Layout extends Component{
             <Aux>
                 
                 <Toolbar 
-        
                     open={this.state.showSideDrawer} 
                     toggle ={this.sideDrawerToggleHandler }
                     /> 
