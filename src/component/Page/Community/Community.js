@@ -4,8 +4,7 @@ import './Community.css'
 const Community = (props) => {
 
   console.log('--post',props)
-  const MAX_LENGTH = 40;
-  const { title } = props;
+
 
   return(
 

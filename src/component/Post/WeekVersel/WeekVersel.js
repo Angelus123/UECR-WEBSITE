@@ -1,6 +1,4 @@
 import React from 'react'
-import bible from'../../../assets/bible1.png'
-import next1 from'../../../assets/next1.png'
 import book from'../../../assets/book.png'
 
 const WeekVersel = () => {
