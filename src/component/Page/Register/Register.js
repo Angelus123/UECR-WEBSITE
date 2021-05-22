@@ -13,7 +13,7 @@ class RegisterForm extends Component{
     return (
       <Aux>
       <div style ={{textAlign:'center'}}>
-      <Button btnType='Danger' clicked ={this.props.modalClosed }>X</Button>
+      <Button btnType='Danger' clicked ={this.props.registerClosed }>X</Button>
       <h3>Register</h3>
       <div className="register-form">
         <input type="text" placeholder="Full Name" className="register-box"/>

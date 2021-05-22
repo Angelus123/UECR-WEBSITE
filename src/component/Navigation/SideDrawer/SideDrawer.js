@@ -16,16 +16,13 @@ const sideDrawer = ( props ) => {
               
       <Backdrop show ={props.open} clicked= {props.closed} />  
             <div className = {attachedClasses.join(' ')}>
-                    <Logo height='11%'/>
-                   
-                    
+            <div onClick={props.closed} className ='Exit'>X</div>
+                    <Logo height='11%' close={props.closed}/>    
                 <nav>
                     <NavigationItems close= {props.closed}/>
                 </nav>
-                <button onClick={props.closed}>EXIT</button>
+              
             </div>
         </Aux>
         }
-    
-
 export default sideDrawer;

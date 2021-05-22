@@ -1,5 +1,5 @@
 import React from'react'
-import uecr from '../../../assets/Bible1.png'
+import uecr from '../../../assets/bible1.png'
 import './About.css'
 const AboutUECRPost = (props) => {
 

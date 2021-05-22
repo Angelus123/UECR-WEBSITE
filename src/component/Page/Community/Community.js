@@ -21,7 +21,7 @@ const Community = (props) => {
                 <h3>Lumiere de Jesue</h3>
                 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <img src={berger} alt="Berger" className="img"/>
+                    <img src={berger} alt="Berger" className="img-community"/>
                  
                   
                 <a href="http://">More</a>
@@ -29,7 +29,7 @@ const Community = (props) => {
         <div className="text-panel-community">
                 <h3>Lumiere du monde </h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <img src={berger} alt="Berger" className="img"/>
+                    <img src={berger} alt="Berger" className="img-community"/>
                    
               
                
@@ -39,7 +39,7 @@ const Community = (props) => {
         <div className="text-panel-community">
                 <h3>ABUNGERI </h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <img src={berger} alt="Berger" className="img"/>
+                    <img src={berger} alt="Berger" className="img-community"/>
                
                    
                   
@@ -49,7 +49,7 @@ const Community = (props) => {
         <div className="text-panel-community">
                 <h3>CAVEM </h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <img src={berger} alt="Berger" className="img"/>
+                    <img src={berger} alt="Berger" className="img-community"/>
                   
                  
                 <a href="http://">More</a>
@@ -59,6 +59,7 @@ const Community = (props) => {
         <div className="text-panel-community">
                 <h3>ULK </h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <img src={berger} alt="Berger" className="img-community"/>
                  
                   
                 <a href="http://">More</a>
@@ -67,112 +68,89 @@ const Community = (props) => {
         <div className="text-panel-community">
                 <h3>TCT </h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              
-                 
                 <a href="http://">More</a>
+                <img src={berger} alt="Berger" className="img-community"/>
         </div>
 
         <div className="text-panel-community">
                 <h3>Lumiere du monde </h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                   
-           
-                  
                 <a href="http://">More</a>
+                <img src={berger} alt="Berger" className="img-community"/>
         </div>
 
         <div className="text-panel-community">
                 <h3>Lumiere du monde </h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  
-                    
-               
                 <a href="http://">More</a>
+                <img src={berger} alt="Berger" className="img-community"/>
         </div>
 
         <div className="text-panel-community">
                 <h3>Lumiere du monde </h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                   
-                 
                 <a href="http://">More</a>
+                <img src={berger} alt="Berger" className="img-community"/>
         </div>
         <div className="text-panel-community">
                 <h3>Lumiere du monde </h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                   
-                 
                 <a href="http://">More</a>
+                <img src={berger} alt="Berger" className="img-community"/>
         </div>
         <div className="text-panel-community">
                 <h3>Lumiere du monde </h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                   
-                 
                 <a href="http://">More</a>
+                <img src={berger} alt="Berger" className="img-community"/>
         </div>
         <div className="text-panel-community">
                 <h3>Lumiere du monde </h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                   
-                 
                 <a href="http://">More</a>
+                <img src={berger} alt="Berger" className="img-community"/>
         </div>
         <div className="text-panel-community">
                 <h3>Lumiere du monde </h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                   
-                 
                 <a href="http://">More</a>
+                <img src={berger} alt="Berger" className="img-community"/>
         </div>
         <div className="text-panel-community">
                 <h3>Lumiere du monde </h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                   
-                 
                 <a href="http://">More</a>
+                <img src={berger} alt="Berger" className="img-community"/>
+        </div>
+        <div className="text-panel-community">
+                <h3>Lumiere du monde </h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.   
+                <img src={berger} alt="Berger" className="img-community"/>
         </div>
         <div className="text-panel-community">
                 <h3>Lumiere du monde </h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                   
-                 
-                <a href="http://">More</a>
+                <img src={berger} alt="Berger" className="img-community"/>
         </div>
         <div className="text-panel-community">
                 <h3>Lumiere du monde </h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                   
-                 
-                <a href="http://">More</a>
+                <img src={berger} alt="Berger" className="img-community"/>
         </div>
         <div className="text-panel-community">
                 <h3>Lumiere du monde </h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                   
-                 
-                <a href="http://">More</a>
+                <img src={berger} alt="Berger" className="img-community"/>
         </div>
         <div className="text-panel-community">
                 <h3>Lumiere du monde </h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                   
-                 
-                <a href="http://">More</a>
+                 <img src={berger} alt="Berger" className="img-community"/>
         </div>
         <div className="text-panel-community">
                 <h3>Lumiere du monde </h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                   
-                 
-                <a href="http://">More</a>
-        </div>
-        <div className="text-panel-community">
-                <h3>Lumiere du monde </h3>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                   
-                 
-                <a href="http://">More</a>
+                <img src={berger} alt="Berger" className="img-community"/>
         </div>
         
 

@@ -1,13 +1,11 @@
 import React from 'react'
-import '../../style/ustyle.css'
-import bible from'../../assets/bible.jpg'
+import './Side.css'
+import './zoom.css'
 import facebook from'../../assets/facebook.png'
 import whatsapp from'../../assets/whatsapp.png'
 import twitter from'../../assets/twitter.png'
 import instagram from'../../assets/instagram.png'
-import next from'../../assets/next.png'
 import rukara from'../../assets/rukara.jpg'
-import rukaraIncide from'../../assets/rukaraInside.jpg'
 import journey from'../../assets/journey.jpg'
 import saint from'../../assets/Saint.jpg'
 
@@ -23,62 +21,62 @@ const Side= (props) => {
                 Register</button>
                 to be a part of us, pray with us, invite us, meet friend, Update,join our
                
-                <a href="/"> Events</a> we need u. 
+                <a href="/"> Events</a> 
+                <br />
                 <button 
                 className="LoginButton " 
                 onClick = {props.login}>
                 Login
                 </button> 
                 if already have account. 
-                <br/> <br/> <br/>
-                
-                <button>Pray At</button>here you can see day and time our <a href="/"> community</a> pray, so you can pray with us. 
-                <button>Events</button> You can see the upcoming events, then by enroll you can join us. <button>Zone</button>|
-                <br/><button>Contact us</button>
+                <br/> <br/>  
+              Contact us
     
                 <img src= {facebook}  alt="" srcSet="" className="contact-icon"/>
-            
+         
                 <img src={whatsapp} alt="" srcSet=""className="contact-icon"/>
                 
                 <img src={twitter} alt="" srcSet=""id="contact_icon-blue"/>
     
                 <img src={instagram} alt="" srcSet=""className="contact-icon"/>
-                <button className="next-button">
-                    <img src={next} alt="" srcSet="" className="next-icon"/>
-                </button>
-        
-                
-    
-                <div  className="itemb">
+
                 
                 <h2>Gallery</h2>
 
-                <div className="itemb1"> 
-                    <img src={rukara}  alt="" srcSet="" className="Gallery"/>
+                <div className="item-gallery "> 
+                     <div class="zoom-without-container">
+                        <img src={rukara}  alt="" srcSet="" className="Gallery"/>
+                     </div>
+                    
+                </div>
+            <div class="item-gallery">
+            <div class="zoom-without-container">
+                <img src="https://c4.staticflickr.com/8/7114/13963940252_cfa9c53e9a_c.jpg" alt="zoom" />
+            </div>
+		    </div>
+             <div className="item-gallery"> 
+                <div className="zoom-without-container"> 
+                        <img src={journey} alt="zoom" className="Gallery"/>
+                </div>
+              </div>
+                <div className="item-gallery"> 
+                    <div className="zoom-without-container"> 
+                        <img src={saint} alt="zoom" className="Gallery"/>
+                    </div>
                 </div>
 
-                <div className="itemb1"> 
-                    <img src={rukaraIncide} alt="" srcSet=""className="Gallery"/>
-                </div>
-
-                <div className="itemb1"> 
-                    <img src={journey} alt="" srcSet=""  className="Gallery"/>
-                </div>
-
-                <div className="itemb1"> 
-                    <img src={saint} alt="" srcSet=""className="Gallery"/>
-                </div>
-
-                <div className="itema1">
-                    <b>Next>></b>
+              <div className="item-gallery"> 
+                    <div className="zoom-without-container"> 
+                        <img src={journey} alt="zoom" className="Gallery"/>
+                    </div>
                 </div>
                         
-                </div>
+              
                 
     
                 <div style={{ padding: "13px 10% 0px 15%" }} className="itemb">
-                    <img src={journey} alt="" srcSet="" width="100%" style={{  borderRadius: '20'}}  className="itemb"/> 
-                    <h3>Heaven</h3>
+                    <img src={rukara} alt="" srcSet="" width="100%" style={{  borderRadius: '20'}}  className="itemb"/> 
+                    <h3>Anouncements</h3>
                     <hr color="red"/>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -88,7 +86,7 @@ const Side= (props) => {
 
                 <div style={{ padding: "13px 10% 0px 15%" }}className="itemb">
                     <div className="itema1">
-                        <b>Next>></b>
+                      
                     </div>
                 </div>              
             </div>
