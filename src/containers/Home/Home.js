@@ -5,7 +5,7 @@ import Slide from '../../component/SlideImg/SlideImg'
 import Side from '../../component/Side/Side'
 import WeekNewsPosts from './Posts/WeekNewsPosts/WeekNewsPosts'
 import SevenGiftPosts from './Posts/SevenGiftPosts/SevenGiftPosts'
-import UECRZone from '../../component/Post/UECRZone/UECRZone'
+import UECRZonePosts from './Posts/UECRZonePosts/UECRZonePosts'
 import Login from '../../component/UI/Login/Login'
 import Register from '../../component/UI/Register/Register'
 import LoginForm from '../../component/Page/Login/Login'
@@ -52,7 +52,7 @@ class Home extends Component{
                         </Register>     
                         <WeekNewsPosts />                                    
                         <SevenGiftPosts/>
-                        <UECRZone/>
+                        <UECRZonePosts/>
                     </div>
                  
               

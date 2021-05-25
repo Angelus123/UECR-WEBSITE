@@ -3,11 +3,12 @@ import back from '../../../assets/journey.jpg'
 
 const UECRNewsPost = (props) => {
     console.log('[NewsPostchecker]', props.title)
+    const videoURL="https://www.youtube.com/embed/"+props.videoId
     return(
-        <div className= "item item--4">
+        <div className = "item item--4">
              <br />
   <iframe width="80%" height="auto"
-                src="https://www.youtube.com/embed/Odzw6EX2360">
+                src={videoURL}>
             </iframe>
         <br />
             {props.title}

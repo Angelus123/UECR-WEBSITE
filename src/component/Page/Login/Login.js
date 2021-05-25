@@ -13,7 +13,8 @@ class RegisterForm extends Component{
     return (
       <Aux>
       <div style ={{textAlign:'center'}}>
-      <Button btnType='Danger' clicked ={this.props.loginClosed }>X</Button>
+      <Link to ="/"><Button btnType='Danger' clicked ={this.props.loginClosed }>X</Button></Link>
+      
       <h3>Login</h3>
       <div className="Login-form">
         <input type="email" placeholder="Email" className="login-box"/>

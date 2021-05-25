@@ -1,0 +1,20 @@
+.wgh-item-figure__image-gift {
+    width:80%;
+  height:250px;
+  display: block;
+  margin: 20px;
+  z-index: 1;
+  opacity: 1;
+}
+.wgh-slider-item-figure__caption-gift {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  padding: 7px;
+  background-image: linear-gradient(0deg, #000 0%, transparent 100%);
+  /* z-index: 2; */
+}

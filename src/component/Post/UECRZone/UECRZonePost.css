@@ -1,0 +1,13 @@
+
+.item-zone {
+    width: 100%;
+    -webkit-box-shadow: 10px 20px 10px rgba(14, 2, 77, 0.151);
+    box-shadow: 10px 20px 10px rgba(14, 2, 77, 0.151);
+    font-family: sans-serif;
+    font-weight:1;
+    font-size: 16px;
+    text-align: left;
+    margin: 0.4em;
+    padding: 15px;
+    cursor: pointer;
+}

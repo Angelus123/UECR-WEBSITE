@@ -8,6 +8,7 @@ import instagram from'../../assets/instagram.png'
 import rukara from'../../assets/rukara.jpg'
 import journey from'../../assets/journey.jpg'
 import saint from'../../assets/Saint.jpg'
+import { Link } from 'react-router-dom'
 
 const Side= (props) => {
     return(
@@ -78,8 +79,8 @@ const Side= (props) => {
                     <img src={rukara} alt="" srcSet="" width="100%" style={{  borderRadius: '20'}}  className="itemb"/> 
                     <h3>Anouncements</h3>
                     <hr color="red"/>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        <p> 
+                            <Link to ="/add-announcements"><button>Add anouncements</button></Link> 
                             <a href="http://">More</a>  
                         </p> 
                 </div>
