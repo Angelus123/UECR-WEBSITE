@@ -8,9 +8,8 @@
 .NavigationItem a {
     margin:0 10px;
     text-decoration: none;
-    width:100;
-    padding: 16px 10px;
-    border-right:2px solid rgba(204, 201, 201, 0.301);
+    padding: 10px 10px;
+    border-right:2px solid rgba(245, 7, 7, 0.13);
     box-sizing:border-box;
     display: block;
 
@@ -18,8 +17,8 @@
 .NavigationItem a:hover,
 .NavigationItem a:active,
 .NavigationItem a.active{
-    color:#000000;
-    background-color:#dff8f149;
+    color:rgb(245, 13, 13);
+  
 }
 @media (min-width: 500px){
     .NavigatiomItem {
@@ -28,17 +27,19 @@
         height:100%;
         align-items:center ;
     }
+    
    
     .NavigationItem:hover,
     .NavigationItem:active,
     .NavigationItem.active{
-        background-color:#ddf0eae1;
-        border-bottom: 4px solid #a5cedd;
-        color:rgb(10, 8, 8);
+      
+        color:white;
+       
     }
-    #active  {background-color:#f1f6f5e1;
-    border-bottom: 4px solid #a5cedd;
-    color:rgb(10, 8, 8);
-   
 }
+.heading{
+    font-size: 14px;
+    font-weight: 100;
+    
+
 }

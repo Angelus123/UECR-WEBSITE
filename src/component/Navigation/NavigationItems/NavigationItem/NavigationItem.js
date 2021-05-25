@@ -8,7 +8,7 @@ class NavigationItem extends Component{
         return (
         <Aux>
             <div className="NavigationItem" onClick={this.props.close}>
-                <NavLink to ={this.props.link} exact >{this.props.children}</NavLink>
+                <NavLink to ={this.props.link} exact ><h1 className="heading">{this.props.children}</h1></NavLink>
             </div>
         </Aux>     
           )

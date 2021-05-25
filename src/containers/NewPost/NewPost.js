@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios'
+import axios from '../../axios'
 import './NewPost.css';
 
 class NewPost extends Component {
@@ -17,7 +17,7 @@ class NewPost extends Component {
             content: this.state.content,
             this: this.state.author
         }
-        axios.post('/posts', data)
+        axios.post('/news.json', data)
             .then(response =>{
                 console.log(response)
             }).catch(err => {

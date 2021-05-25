@@ -1,59 +1,38 @@
 import React from 'react'
-import snow from'../../../assets/snow.jpg'
-import journey from'../../../assets/journey.jpg'
-import nightSnow from'../../../assets/nightSnow.jpg'
-import river from'../../../assets/river.jpg'
-const UECRZone = () => {
+import './UECRZonePost.css'
+import Aux from '../../../hoc/Auxi/Auxilliary'
+import West from'../../../assets/img/fatima.jpg'
+import North from'../../../assets/img/image-1.jpg'
+import East from'../../../assets/img/image-5.jpg'
+import South from'../../../assets/img/image-4.jpg'
+import Kigali from'../../../assets/img/image-6.jpg'
+import './UECRZone.css'
+const UECRZone = (props) => {
+    console.log(props.name)
+    let image = null
+    if (props.name==="West")
+    image = <img  src={West} className ="wgh-item-figure__image" alt="west" />
+    else if(props.name==="North")
+     image = <img  src={North} className ="wgh-item-figure__image"  alt="North Zone" />
+    else if(props.name==="South")
+     image = <img  src={South} className ="wgh-item-figure__image" alt="South Zone"  />
+    else if(props.name==="East")
+     image = <img  src={East} className ="wgh-item-figure__image" alt="East Zone" />
+    else
+     image = <img  src={Kigali} className ="wgh-item-figure__image" alt="Kigali Zone" />
     return(
-<div className="item item--16">
-
-    <hr />
-    <h2>UECR Zone</h2>
+    <Aux>
+    <h2>{props.name}</h2>
     <div className="item-zone">
-    <h3>Eastern</h3>
-    <img src={nightSnow} alt="" srcset="" width="100%" />
-    
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Sapiente ex molestiae quam culpa consectetur beatae expedita,
+       
+  <figure className="wgh-slider-item-figure">
+              {image}
+                <figcaption className="wgh-slider-item-figure__caption"><a href="https://picsum.photos/id/237/480/480">{props.name}</a><span>{props.content}</span></figcaption>
+ </figure>
         <a href="http://">More</a>
   
     </div> 
-    <div className="item-zone">
-        <h3>Western and Norther</h3>
-        <img src={snow} alt="" srcset="" width="100%"  />
-        
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Sapiente ex molestiae quam culpa consectetur beatae expedita,
-            <a href="http://">More</a>  
-      
-    </div> 
-
-    <div className="item-zone">
-        <h3>Southern</h3>
-        <img src={journey} alt="" srcset="" width="100%"  />
-        
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Sapiente ex molestiae quam culpa consectetur beatae expedita,
-            <a href="http://">More</a>  
-      
-
-    </div> 
-
-    <div className="item-zone">
-        <h3>Kigali</h3>
-        <img src={river} alt="" srcset="" width="100%"  />
-        
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Sapiente ex molestiae quam culpa consectetur beatae expedita,
-            <a href="http://">More</a>  
-       
-
-    </div> 
-</div>
+</Aux>
 )
 }
 export default UECRZone

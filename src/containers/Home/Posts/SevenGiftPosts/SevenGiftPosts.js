@@ -4,69 +4,82 @@ import {Link} from 'react-router-dom'
 import Aux from '../../../../hoc/Auxi/Auxilliary'
 import Post from '../../../../component/Post/SevenGift/SevenGift'
 import './SevenGiftPosts.css'
-class SevenGiftPosts extends Component {
+class WeekNewsPosts extends Component {
     state
     = {
-       posts:[]
-      
+        posts:[],
+     
    }
    
     
    componentDidMount() {
        console.log("--did saint")
-    axios.get('/posts')
+    axios.get('https://uecr-rwanda-default-rtdb.firebaseio.com/gifts.json')
     .then(response => {
-        console.log('--res saint-',response)
-        const posts = response.data.slice(0,7);
-        const updatePosts = posts.map(post => {
-            return{
-                ...post,
-                author:'Max'
-            } 
-
-        })
-
-    
-        this.setState({posts:updatePosts})
-         console.log('update',updatePosts)
+        const posts = response.data;
+        console.log('--res saint-', posts)
+        const fetchResults =[];
+        for(let key in posts){
+            fetchResults.unshift(
+                {
+                    ...response.data[key],
+                    id:key
+                }
+            ) 
+        }
+        console.log(fetchResults)
+        this.setState({posts:fetchResults})
+       
         }
         )
         .catch(err => {
         this.setState({Error:true})
-
-        })
-    
+            console.log("izere",this.state.posts)
+    }) 
+  
 }
-   postSelectedHandler =(id) => {
-    this.setState({selectedPostId:id})
-}
+  
     render () {
+        let limitposts=[]
+
+    limitposts=this.state.posts
 
         let posts =<p style ={{textAlign: 'center',color: 'red'}}>Something went wrong!</p>
         if(!this.state.Error)  
-        posts = this.state.posts.map(post => {
+      
+           posts =  limitposts.slice(0,7).map(post => {
             return (
             <Link to ={'/posts/'+ post.id} key = {post.id}>
-                <Post  key = {post.id}
-                title ={post.title} 
-                body={post.body}
+                <Post  
+                key = {post.id}
+                name ={post.name} 
+                number={post.number}
+                title={post.title}
+                content ={post.content}
                 clicked ={() =>this.postSelectedHandler(post.id)}/>  
          </Link> 
           )
         }
-        )
+           )
+        
         
         return ( 
             <Aux >
-                    <div style={{textAlign:'center'}}><h2>Gift from God </h2></div>
-               <div className="item item--12" height="250px">
-                 
-                    
+                
+                  
+<div className="item item--5">
+    <div style ={{backgroundColor:"White",borderRadius:'5%'}}> <h1>Holy Spirit Gifts</h1></div>
+ 
                      {posts}
-               </div>
-                   
+                     <Link to ={{
+
+                                pathname:"/add-gift",
+                                hash:"#submit",
+                                search:"?quick-submit=true"}}><button>Add Gift</button></Link>
+                            
+                   </div>
                
             </Aux>)
     }
 }
-export default SevenGiftPosts 
+export default WeekNewsPosts

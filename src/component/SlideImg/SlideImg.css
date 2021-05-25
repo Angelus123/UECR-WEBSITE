@@ -1,5 +1,63 @@
-  
+  .intro-header{
+  color: white;
+  font-size: 36px;
+  text-align: left;
+  font-weight:unset;
+  margin: 5px 55px;
+  line-height: normal;
+  }
+  .intro-subheader{
+  font-size: 16px;
+  text-align: left;
+  font-weight:unset;
+  margin: 5px 55px;
+  line-height: normal;
+  }
+
+  .wgh-slider-item-figure {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.wgh-item-figure__image {
+  /* position: absolute; */
+  width:80%;
+  height:250px;
+  display: block;
+  margin: 20px;
+  z-index: 1;
+  opacity: 1;
+} 
+.wgh-slider-item-figure__caption {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  padding: 24px;
+  background-image: linear-gradient(0deg, #000 0%, transparent 100%);
+  z-index: 2;
+}
+.wgh-slider-item-figure__caption a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.wgh-slider-item-figure__caption span {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+}
     .intro {
+    
         color: white;
         background-color: rgba(0, 0, 0, 0.109);
         width: 50%;
