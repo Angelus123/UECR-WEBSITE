@@ -71,3 +71,8 @@
 .zoom-within-container:hover img {
   transform: scale(1.5);
 }
+.button-auth{
+    width:80px;
+    padding: 0 5px;
+    margin:5px;
+}

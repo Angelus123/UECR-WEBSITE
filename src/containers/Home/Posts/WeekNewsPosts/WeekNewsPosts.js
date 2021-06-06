@@ -17,7 +17,7 @@ class WeekNewsPosts extends Component {
     axios.get('https://uecr-rwanda-default-rtdb.firebaseio.com/news.json')
     .then(response => {
         const posts = response.data;
-        console.log('--res saint-', posts)
+
         const fetchResults =[];
         for(let key in posts){
             fetchResults.unshift(
@@ -47,7 +47,7 @@ class WeekNewsPosts extends Component {
         let posts =<p style ={{textAlign: 'center',color: 'red'}}>Something went wrong!</p>
         if(!this.state.Error)  
       
-           posts =  limitposts.slice(0,6).map(post => {
+           posts =  limitposts.slice(0,9).map(post => {
             return (
             <Link to ={'/posts/'+ post.id} key = {post.id}>
                 <Post  

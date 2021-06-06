@@ -24,6 +24,7 @@
   height: 100%;
   font-size: 12px;
   display: grid;
+  background-color: white;
   grid-template-rows: repeat(9 1fr);
   grid-template-columns: repeat(5 1fr);
 }
@@ -34,27 +35,27 @@
 }
 .item {
   color: #030000;
+  background-color: white;
   font-family: sans-serif;
   font-style: bold;
   height: 100%;
-  background-color: #ffffff00;
   grid-gap: 10px;
 }
 
 .item--1 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
+
   grid-row: 1/2;
   grid-column: 1/5;
   position:relative;
 }
 
 .item--2 {
+  background-color: white;
   background-repeat: no-repeat;
   background-size:cover;
   grid-row: 2/3;
   text-align: center;
-  grid-column: 1/4;  
+  grid-column: 1/5;  
   color: #1c0120;
 }
 /* side -------------------------*/
@@ -62,6 +63,7 @@
   width:80%;
   margin: 10px;
   text-align: center;
+    background-color: white;
   box-shadow: 5px 7px 5px rgba(17, 5, 80, 0.267);
   font-family: sans-serif;
   font-size: 14px;
@@ -70,9 +72,8 @@
 }
 .item--3 {
   text-align: center;
-  background-color: #f9fdff;
   font: 16px;
-  grid-row: 2/9;
+  grid-row: 3/9;
   grid-column:4/5 ;
 
 }
@@ -98,7 +99,7 @@
 .item--5 {
   background-color: white;
   text-align: left;
-  display:inline-flex;
+  display:inline-block;
   padding: 15px;
   grid-row: 11/12;
   grid-column: 1/5;
@@ -180,14 +181,11 @@
 }
 
 .item .subcontainer-1 {
-
-    box-shadow: 10px 20px 10px rgba(1, 26, 31, 0.308);
     background-image: webkit-gradient(linear, left top, right bottom, from(#f8f1f1), to(#f01717));
-    background-image: linear-gradient(to right bottom, #bd1303, #000000);
+    background-image: linear-gradient(to right bottom, #8d0f04, #6e0505);
     clip-path: polygon();
     width: 100%;
     display: grid;
-
     grid-template-rows: repeat(2, 20px);
     grid-template-columns: repeat(2, 3fr) repeat(3, 1fr);
 }
@@ -382,12 +380,15 @@
   .item-community {
     font-size: 18px;
   }
+  .item-gallery {
+  width: 200px;
+  display: inline-block;
+  cursor: pointer;
 }
-.item-gallery {
+}
   
-  -webkit-box-shadow: 5px 7px 5px rgba(17, 5, 80, 0.644);
-          box-shadow: 5px 7px 5px rgba(17, 5, 80, 0.644);
-  border: 1px solid rgba(252, 13, 13, 0.301);
+.item-gallery {
+  max-width:300px;
   display: inline-block;
   cursor: pointer;
 }

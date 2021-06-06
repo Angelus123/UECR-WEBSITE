@@ -60,18 +60,23 @@
     
         color: white;
         background-color: rgba(0, 0, 0, 0.109);
-        width: 50%;
+        width: 100%;
         display:inline-block;
         height:auto;
       
     }
      .slide-img {
         color: white;
-        background-color: rgba(5, 12, 0, 0.671);
+        margin-top: -25px;
+        background-image: url("../../assets/img/holy-spirit.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(12, 0, 0, 0.671);
         width: 100%;
         display:inline-block;
         height:auto;
     }
+     
     .vid-versal-today {
         margin-top: 5px;
         color: white;

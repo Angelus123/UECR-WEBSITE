@@ -50,7 +50,6 @@ class NewPost extends Component {
         return (
        
             <div className="NewPost">
-                    {redirect}
                 <h1>Add News related to videos Post</h1>
                 <label>Video Title</label>
                 <input type="text" value={this.state.title} onChange={(event) => this.setState({title: event.target.value})} />
