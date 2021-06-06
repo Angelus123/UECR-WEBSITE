@@ -17,20 +17,20 @@ const Side= (props) => {
                 <h3>Be a part of us, bonded in Jesus love</h3>
                 <hr/>
               
-                <button className="RegisterButton"
+                <button className="button-auth"
                 onClick = {props.register}>
                 Register</button>
-                to be a part of us, pray with us, invite us, meet friend, Update,join our
-               
-                <a href="/"> Events</a> 
-                <br />
-                <button 
-                className="LoginButton " 
-                onClick = {props.login}>
-                Login
-                </button> 
+                to be a part of us, pray with us, invite us, meet friend and join our events
+                <div style={{textAlign:'left'}}>
+                    <button className="button-auth" 
+                        onClick = {props.login}>
+                        Login
+                        </button> 
                 if already have account. 
-                <br/> <br/>  
+                <br/>
+                </div>
+    
+                 <br/>  
               Contact us
     
                 <img src= {facebook}  alt="" srcSet="" className="contact-icon"/>
@@ -55,17 +55,7 @@ const Side= (props) => {
                 <img src="https://c4.staticflickr.com/8/7114/13963940252_cfa9c53e9a_c.jpg" alt="zoom" />
             </div>
 		    </div>
-             <div className="item-gallery"> 
-                <div className="zoom-without-container"> 
-                        <img src={journey} alt="zoom" className="Gallery"/>
-                </div>
-              </div>
-                <div className="item-gallery"> 
-                    <div className="zoom-without-container"> 
-                        <img src={saint} alt="zoom" className="Gallery"/>
-                    </div>
-                </div>
-
+  
               <div className="item-gallery"> 
                     <div className="zoom-without-container"> 
                         <img src={journey} alt="zoom" className="Gallery"/>
@@ -76,7 +66,7 @@ const Side= (props) => {
                 
     
                 <div style={{ padding: "13px 10% 0px 15%" }} className="itemb">
-                    <img src={rukara} alt="" srcSet="" width="100%" style={{  borderRadius: '20'}}  className="itemb"/> 
+                
                     <h3>Anouncements</h3>
                     <hr color="red"/>
                         <p> 

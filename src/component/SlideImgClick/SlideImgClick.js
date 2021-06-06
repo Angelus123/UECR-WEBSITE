@@ -12,16 +12,13 @@ const Community = (props) => {
   return(
 
  <Aux>
+   
             <div className="ScriptTop">
     <div className="rt-container">
         <div className="col-rt-4" id="float-right">
  
         </div>
-        <div className="col-rt-2">
-            <ul>
-                <li><a href="https://codeconvey.com/pure-css-coverflow-slider">Library</a></li>
-            </ul>
-        </div>
+       
     </div>
 </div>
 
@@ -29,7 +26,8 @@ const Community = (props) => {
     <div className="rt-container">
     	<div className="col-rt-12">
         	<div className="rt-heading">
-            	<h1  style={{fontSize:'62px'}}>Secrets</h1>
+            	<h1 >RCC RWANDA</h1>
+              <h3 >Renouvaux Charsimatique Chatholic Au Rwanda</h3>
               
             </div>
         </div>

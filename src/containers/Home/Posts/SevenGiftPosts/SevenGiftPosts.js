@@ -68,7 +68,7 @@ class WeekNewsPosts extends Component {
                 
                   
 <div className="item item--5">
-    <div style ={{backgroundColor:"White",borderRadius:'5%'}}> <h1>Holy Spirit Gifts</h1></div>
+    <div style ={{backgroundColor:"White"}}> <h1>Holy Spirit Gifts</h1></div>
  
                      {posts}
                      <Link to ={{

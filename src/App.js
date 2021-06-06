@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { BrowserRouter, Route} from 'react-router-dom'
+import { BrowserRouter, Route, Switch} from 'react-router-dom'
 import Layout from './hoc/Layout/Layout'
 import Home from './containers/Home/Home'
 import Register from './component/Page/Register/Register'
@@ -18,17 +18,22 @@ class App extends Component {
      
             <BrowserRouter>
                   <Layout>
-                    <Route path= "/"  exact component ={Home }/>
-                    <Route path= "/login" component ={Login}/>
-                    <Route path= "/register" component ={Register}/>
-                    <Route path= "/aboutuecr" component ={About}/>
-                    <Route path= "/community" component ={Community}/>
-                    <Route path= "/history" component ={History}/>
-                    <Route path= "/staff" component ={Staff}/>
-                    <Route path= "/add-news" component ={AddNews}/>
-                    <Route path= "/add-zone" component ={AddZone}/>
-                    <Route path= "/add-gift" component ={AddGift}/>
-                    <Route path= "/add-announcements" component ={AddAnnouncements}/>
+                    
+                      <Switch>
+                            <Route path= "/"  exact component ={Home }/>
+                            <Route path= "/login" component ={Login}/>
+                            <Route path= "/register" component ={Register}/>
+                            <Route path= "/aboutuecr" component ={About}/>
+                            <Route path= "/community" component ={Community}/>
+                            <Route path= "/history" component ={History}/>
+                            <Route path= "/staff" component ={Staff}/>
+                            <Route path= "/add-news" component ={AddNews}/>
+                            <Route path= "/add-zone" component ={AddZone}/>
+                            <Route path= "/add-gift" component ={AddGift}/>
+                            <Route path= "/add-announcements" component ={AddAnnouncements}/>
+                            <Route render ={() =><h1 style={{textAlign:'center',color:'red',padding:'175px'}}>This page is under construction, please try again later</h1>}/>
+                        </Switch>
+                  
                   </Layout>
             
             </BrowserRouter>
